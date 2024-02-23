@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+
+import PageLayout from "@/layouts/Base";
+import longRoad from "@/assets/long_road.jpg";
+// import aboutImg from "@/assets/about-astro.png";
+
+const meta = {
+	title: "Oops! You found a missing page!",
+	description: "Oops! It looks like this page is lost in space!",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-6">404 | Something went wrong</h1>
+	<p class="mb-8 text-lg font-mono">Well... This is awkward. Would you mind going back the way you came?</p>
+
+	<div class="my-4 grid justify-center">
+		<Image
+			src={longRoad}
+			alt="A long road leading to a hot air balloon"
+			loading="eager"
+		/>
+	</div>
+</PageLayout>

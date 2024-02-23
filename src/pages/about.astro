@@ -1,0 +1,53 @@
+---
+import FormattedDate from "@/components/FormattedDate";
+import PageLayout from "@/layouts/Base";
+import SocialList from "@/components/SocialList";
+
+
+const lastUpdated = new Date("February 7, 2024");
+
+const meta = {
+	title: "About",
+	description: "Anything of note?",
+};
+
+const dateTimeOptions: Intl.DateTimeFormatOptions = {
+	month: "long",
+	day: "2-digit",
+	year: "numeric",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="space-y-6">
+		<h1 class="title">About Me</h1>
+		<p>
+			Hi! I'm Arnav Priyadarshi. I'm a student living in the beautiful city of Toronto. This website's a little place where I like to experiment, study, and record my work.
+		</p>
+
+		<SocialList />
+
+		<h1 class="title">What's New?</h1>
+		<span class="rounded-lg bg-quote/10 p-1 text-quote">
+			Last Updated:
+			<FormattedDate class="ms-1" date={lastUpdated} dateTimeOptions={dateTimeOptions} />
+		</span>
+		<p>
+			Peruse pieces of my person, perhaps to procure an impulse to pursue.
+		</p>
+		<ul class="list-inside list-disc">
+			<li>
+				I'm currently studying in my 3rd year of college for a degree in Computer Science at the University of Toronto Scarborough.
+			</li>
+			<li>
+				I'm currently preparing to enter the world of cloud computing with an AWS certified cloud practitioner certification. Wish me luck on my exam!
+			</li>
+			<li>
+				I just made this website you're currently reading. I'm hoping to write extensively in 2024.
+			</li>
+			<li>
+				I'm currently learning <a href="https://elixir-lang.org/">Elixir</a> for some side projects I have in mind. I haven't gotten far but from what I've seen, it looks like something that I could find myself using often.
+			</li>
+		</ul>
+	</div>
+</PageLayout>

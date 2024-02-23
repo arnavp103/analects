@@ -1,0 +1,21 @@
+{
+	"name": "Analects",
+	"short_name": "analects",
+	"description": "Analects Blog",
+	"icons": [
+		{
+			"src": "/192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#1d1f21",
+	"theme_color": "#3f54ba",
+	"display": "standalone"
+}

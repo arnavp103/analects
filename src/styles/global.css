@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root,
+	:root[data-theme="light"] {
+		color-scheme: light;
+		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+		--theme-bg: 97.97% 0.009 299.24;
+		--theme-link: 69.12% 0.049 296.21;
+		--theme-text: 6.04% 0.0034 292.48;
+		--theme-accent: 34.89% 0.086 303.3;
+		--theme-accent-2: 18.22% 0 0;
+		--theme-quote: 52.05% 0.195 266.58;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--theme-bg: 21.86% 0.078 297.03;
+		--theme-link: 69.12% 0.049 296.21;
+		--theme-text: 96% 0.016 297.53;
+		--theme-accent: 83.14% 0.048 296.12;
+		--theme-accent-2: 98% 0 0;
+		--theme-quote: 92.06% 0.031 79.93;
+	}
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	html body {
+		@apply mx-auto flex min-h-screen max-w-4xl flex-col bg-bgColor px-10 pt-16  text-textColor antialiased;
+	}
+
+}

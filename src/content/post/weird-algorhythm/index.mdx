@@ -1,0 +1,21 @@
+---
+title: "The Weird Algorhythm"
+description: "Reimagining classic song lyrics with transformers."
+publishDate: "16 Feb 2024"
+updatedDate: "17 Feb 2024"
+tags: ["machine-learning", "creative"]
+ogImage: "/social-card.png"
+draft: true
+
+---
+
+import Pronounciations from "./Pronounciations.svelte"
+
+
+
+This is a fun little tool inspired by something I saw from a Strange Loop Talk[^1]. The idea is to parody songs by taking in the lyrics, finding replacements for each line that sound phonetically similar, and then outputting the new lyrics. I couldn't find a link to the project, so I just decided to build my own for fun.
+
+<Pronounciations client:idle />
+
+
+[^1]: ["Comedy Writing With Small Generative Models" by Jamie Brew (Strange Loop 2023)](https://www.youtube.com/watch?v=M2o4f_2L0No)
